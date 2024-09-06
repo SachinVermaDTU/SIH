@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- App-Specific Colors -->
+    <color name="purple_500">#6200EA</color> <!-- For Add Friends Button Background -->
+    <color name="teal_700">#00BCD4</color> <!-- For Track Me Button Background -->
+    <color name="colorPrimary">#6200EA</color> <!-- Primary Color for Toolbar and Bottom Navigation -->
+
+    <!-- Background and Tint Colors -->
+    <color name="circle_background_color">#6200EA</color> <!-- Background color for Location Button -->
+    <color name="button_tint_color">#FFFFFF</color> <!-- Tint color for buttons and icons -->
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <!-- Time and Network Status -->
+    <TextView
+        android:id="@+id/time_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="16dp" />
+
+    <!-- Circular Contact Icon -->
+    <View
+        android:id="@+id/contact_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/time_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle_background_contact_icon" />
+
+    <!-- Contact Initials or Image -->
+    <TextView
+        android:id="@+id/contact_initials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_icon"
+        android:layout_alignLeft="@id/contact_icon"
+        android:layout_alignRight="@id/contact_icon"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="-77dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center"
+        android:text="H"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
+    <!-- Calling... Text -->
+    <TextView
+        android:id="@+id/calling_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:43"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/contact_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Contact Name -->
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harsh"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:layout_below="@id/calling_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Contact Number -->
+    <TextView
+        android:id="@+id/contact_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile +91 83830 09399"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/contact_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp" />
+
+    <!-- Bottom Control Buttons -->
+    <LinearLayout
+        android:id="@+id/bottom_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="248dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Keypad Button -->
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="keypad"
+            android:src="@drawable/ic_keypad"
+            app:tint="@android:color/white" />
+
+        <!-- Mute Button -->
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="mute"
+            android:src="@drawable/ic_mute"
+            app:tint="@android:color/white" />
+
+        <!-- Speaker Button -->
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="speaker"
+            android:src="@drawable/ic_speaker"
+            app:tint="@android:color/white" />
+
+        <!-- More Options Button -->
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="more"
+            android:src="@drawable/ic_more"
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+    <!-- End Call Button -->
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/circle_background_end_call"
+        android:contentDescription="end_call"
+        android:src="@drawable/ic_end_call"
+        app:tint="@android:color/white" />
+
+</RelativeLayout>

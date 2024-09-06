@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top App Bar -->
+
+    <!-- Map Image -->
+
+    <!-- Add Friends Button -->
+
+    <!-- Track Me Button -->
+
+    <!-- Location Icon -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:title="Rs"
+        android:titleTextColor="@android:color/white">
+
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_menu" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/mapImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar"
+        android:layout_marginTop="-5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/app" />
+
+    <Button
+        android:id="@+id/addFriendsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="22dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Add Friends"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="#BE1A1A"
+        android:textColorLink="#BA1414" />
+
+    <ImageButton
+        android:id="@+id/locationButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/ic_location"
+        app:tint="@android:color/white" />
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="?attr/colorPrimary"
+        android:weightSum="3">
+
+        <!-- Home Button -->
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_home"
+            app:tint="@android:color/white" />
+
+        <!-- SOS Button -->
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_sos"
+            app:tint="@android:color/white" />
+
+        <!-- Contacts Button -->
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_contacts"
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="69dp"
+        android:layout_above="@+id/bottomNavigation"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="623dp"
+        android:elevation="10dp"
+        android:text="Suraksha"
+        android:textSize="34dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

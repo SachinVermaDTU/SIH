@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Outer Shield -->
+    <path
+        android:fillColor="#FF6200EE"
+        android:pathData="M12,2C7.58,2 4,4.48 4,4.48L4,12c0,5.25 5.45,9.74 7.91,10.95 0.4,0.18 0.86,0.18 1.26,0C14.55,21.74 20,17.25 20,12L20,4.48S16.42,2 12,2z" />
+
+    <!-- Inner Shield Icon -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12,4.5c2.33,0 4.38,1.74 4.92,4.06L14.5,9c-0.39-1.21-1.51-2.05-2.75-2.05s-2.36,0.84-2.75,2.05L7.08,8.56C7.62,6.24 9.67,4.5 12,4.5zM12,14c-1.39,0-2.67-0.56-3.6-1.47L8.82,11.9C9.56,12.56 10.72,13 12,13c1.28,0 2.44-0.44 3.18-1.1l0.42,0.63C14.67,13.44 13.39,14 12,14z" />
+</vector>
